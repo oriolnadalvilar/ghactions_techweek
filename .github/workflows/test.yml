@@ -1,0 +1,18 @@
+name: Test
+
+env:
+  PACKAGE_PATH: ./build
+  NODE_VERSION: 14.x
+  ARTIFACT_NAME: react-webapp
+  ARTIFACT_PATH: ${{ github.workspace }}/react-webapp
+
+jobs:
+  trabajo:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: event_name
+        run: echo este es el job de ${{ jobs.trabajo.name }}
+
+      - name: repository_name
+        run: echo Nombre del repositorio = ${{ env.ARTIFACT_NAME }}
