@@ -1,5 +1,7 @@
 name: Test
 
+on:
+
 env:
   PACKAGE_PATH: ./build
   NODE_VERSION: 14.x
